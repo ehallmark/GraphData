@@ -58,7 +58,7 @@ public class DataFromTextFile {
 				e.printStackTrace();
 				continue;
 			}
-            inner.add(String.valueOf(date.getTime())).add(String.valueOf(timeOn));
+            inner.add(String.valueOf(date.getTime()-(1000 * 60 * 60 * 6))).add(String.valueOf(timeOn));
             data.add(inner.toString());
 		}
 		
